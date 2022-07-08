@@ -6,6 +6,7 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -14,6 +15,9 @@
   --poppins-font: 'Poppins', sans-serif;
   --roboto-font: 'Roboto', sans-serif;
   --dancing-font: 'Dancing Script', 'cursive';
+  --main-orange: #e67f09;
+  --white-font-color: rgb(255, 255, 255);
+  --black-font-color: #000;
 }
 
 /* -------------------------------- HEADER STYLING----------------------------  */
@@ -70,23 +74,23 @@
       flex: 1 1 0;
     }
     .welcome-container {
-      background-color: rgb(77, 65, 56);
+      background-color: rgb(100, 77, 56);
       flex: 1.2 1 0;
       position: relative;
     }
     .welcome-container h1 {
       font-family: var(--dancing-font);
-      color: #ffffff;
+      color: var(--main-orange);
       margin: 1rem;
       width: max-content;
       margin-right: auto;
       padding: 0.2rem;
-      border-bottom: 4px solid #e67f09;
+      border-bottom: 4px solid var(--main-orange);
       font-weight: 100;
     }
     .welcome-container p {
       margin: 1em;
-      color: rgb(253, 253, 253);
+      color: var(--white-font-color);
       padding-right: 3em;
       font-family: var(--poppins-font);
       font-weight: 500;
@@ -104,23 +108,24 @@
       font-size: 1rem;
       border-radius: 20px;
       border: none;
-      color: #fff;
+      color: var(--white-font-color);
       margin: 0% 0.5rem;
       cursor: pointer;
       font-family: var(--albert-sons-font);
     }
 
     .menu-btn {
-      background-color: #e67f09;
+      background-color: var(--main-orange);
       transition: all ease 0.2s;
+      color: var(--black-font-color);
     }
 
     .menu-btn:hover {
-      background-color: #c56d08;
+      background-color: whitesmoke;
     }
 
     .order-btn {
-      border: #e67f09 2px solid;
+      border: var(--main-orange) 2px solid;
       background-color: transparent;
       display: flex;
       align-items: center;
@@ -147,9 +152,10 @@
       margin: 0% 0.5em;
       position: relative;
       text-decoration: none;
-      color: #fff;
+      color: var(--white-font-color);
       font-family: var(--roboto-font);
       transition: all ease 0.2s;
+      font-size: 0.8rem;
     }
 
     .nav-link-icon {
@@ -162,7 +168,7 @@
     }
 
     nav a:hover {
-      color: #e67f09;
+      color: var(--main-orange);
     }
 
     nav a:hover .nav-link-icon {
@@ -181,8 +187,8 @@
       padding: 0.4rem 0.8rem;
       font-size: 0.7rem;
       background-color: transparent;
-      border: 2px solid white;
-      color: white;
+      border: 2px solid var(--white-font-color);
+      color: var(--white-font-color);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -194,11 +200,11 @@
     }
 
     .bottom-container button:hover {
-      background-color: #fff;
+      background-color: var(--white-font-color);
       color: inherit;
     }
     .social-icons {
-      color: #fff;
+      color: var(--white-font-color);
       font-size: 1.2rem;
       margin: 0% 0.2rem;
       cursor: pointer;
@@ -206,5 +212,19 @@
 
     .social-icons:hover {
       background-color: rgba(255, 255, 255, 0);
-      color: rgb(202, 91, 17);
+      color: rgb(255, 179, 128);
     }
+
+main {
+  width: 100%;
+  background-color: rgb(189, 189, 189);
+  padding-bottom: 20em;
+}
+
+.underline {
+  width: 70%;
+  height: 4px;
+  background-color: #353535;
+  margin: 5em auto;
+  border-radius: 10px;
+}
