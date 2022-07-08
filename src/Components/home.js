@@ -3,7 +3,7 @@ import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import { TbHelp } from "react-icons/tb";
 import { IoIosArrowDown } from "react-icons/io";
-import { FaFacebookSquare, FaTwitterSquare, FaInstagramSquare, FaYoutubeSquare, FaMapMarkerAlt } from "react-icons/fa";
+import { FaFacebookSquare, FaTwitterSquare, FaInstagramSquare, FaYoutubeSquare, FaMapMarkerAlt, FaRegHeart } from "react-icons/fa";
 
 const Home = () => {
 
@@ -81,6 +81,10 @@ const Home = () => {
                 <p style={paraStyle}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsam nemo fugiat consequuntur. Reprehenderit nam qui, vel dolor repellendus provident impedit maiores numquam ipsa facilis ipsam obcaecati eligendi velit illo?</p>
             </section>
             <div className="underline"></div>
+            <section className="menu-container">
+                <h1>Menu</h1>
+                
+            </section>
         </main>
     </div>
   )
