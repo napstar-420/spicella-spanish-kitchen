@@ -2,18 +2,7 @@
 import React, { useState } from "react";
 import Header from "./HeaderContainer.js";
 import { menuItems } from "./menu";
-import { BsArrowRightShort } from "react-icons/bs";
-import { TbHelp } from "react-icons/tb";
-import { IoIosArrowDown } from "react-icons/io";
-import {
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
-  FaMapMarkerAlt,
-  FaRegHeart,
-  FaHeart,
-} from "react-icons/fa";
+import { FaRegHeart, FaHeart } from "react-icons/fa";
 
 const Home = () => {
   const [favorite, setFavorite] = useState(false);
