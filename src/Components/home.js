@@ -4,6 +4,7 @@ import Header from "./HeaderContainer.js";
 import AboutUs from "./About_us.js";
 import Menu from "./Menu_Container.js";
 import Services from "./Services_Container.js";
+import ContactUs from './Contact_Us.js'
 
 const Home = () => {
   const sectionStyle = {
@@ -55,19 +56,15 @@ const Home = () => {
             alt="store-img"
           />
         </section>
-
-        <div className="underline" />
-
+        <div className="underline"/>
         <AboutUs />
-
-        <div className="underline" />
-
+        <div className="underline"/>
         <Menu />
-
-        <div className="underline" />
-
+        <div className="underline"/>
         <Services />
-        <div className="underline"></div>
+        <div className="underline"/>
+        <ContactUs/>
+        <div className="underline"/>
       </main>
     </div>
   );
