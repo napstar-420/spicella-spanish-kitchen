@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { menuItems } from "./menu";
-import { FaRegHeart, FaHeart } from "react-icons/fa";
 
 const MenuContainer = () => {
-  const [favorite, setFavorite] = useState(false);
   return (
     <>
       <h1
@@ -29,23 +27,6 @@ const MenuContainer = () => {
                 }}
               >
                 <h2 style={{ fontFamily: "Roboto, sans-serif" }}>{name}</h2>
-                {favorite ? (
-                  <FaHeart
-                    type="button"
-                    style={{ fontSize: "1.5rem", cursor: "pointer" }}
-                    onClick={() => {
-                      setFavorite(!favorite);
-                    }}
-                  />
-                ) : (
-                  <FaRegHeart
-                    type="button"
-                    style={{ fontSize: "1.5rem", cursor: "pointer" }}
-                    onClick={() => {
-                      setFavorite(!favorite);
-                    }}
-                  />
-                )}
               </div>
               <p
                 style={{

@@ -5,6 +5,7 @@ import AboutUs from "./About_us.js";
 import Menu from "./Menu_Container.js";
 import Services from "./Services_Container.js";
 import ContactUs from './Contact_Us.js'
+import Footer from './Footer_container.js'
 
 const Home = () => {
   const sectionStyle = {
@@ -31,6 +32,7 @@ const Home = () => {
                 fontSize: "2rem",
                 marginBottom: "1rem",
                 fontFamily: "Albert Sans, sans-serif",
+                color: "#e67f09",
               }}
             >
               Spicella Spanish Kitchen
@@ -56,13 +58,12 @@ const Home = () => {
             alt="store-img"
           />
         </section>
-        <div className="underline"/>
         <AboutUs />
-        <div className="underline"/>
         <Menu />
         <div className="underline"/>
         <Services />
         <ContactUs/>
+        <Footer />
       </main>
     </div>
   );

@@ -1,27 +1,19 @@
 import React from "react";
 
 const AboutUs = () => {
-  const paraStyle = {
-    fontSize: "1.2rem",
-    fontFamily: "Albert Sans, sans-serif",
-    width: "70%",
-    margin: "auto",
-    textAlign: "center",
-    marginBottom: "2em",
-  };
   return (
     <section id="about-us">
-      <h1
-        style={{
-          fontSize: "3rem",
-          fontFamily: "Albert Sans, sans-serif",
-          color: "#fff",
-          textAlign: "center",
-        }}
-      >
-        Who we are
-      </h1>
       <div className="about-us-container">
+        <h1
+          style={{
+            fontSize: "3rem",
+            fontFamily: "Albert Sans, sans-serif",
+            textAlign: "center",
+            color: "#e67f09",
+          }}
+        >
+          Who we are
+        </h1>
         <p>
           <h2>Hygiene</h2>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam quasi

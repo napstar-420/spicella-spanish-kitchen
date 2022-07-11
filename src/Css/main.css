@@ -16,6 +16,8 @@
   --roboto-font: 'Roboto', sans-serif;
   --dancing-font: 'Dancing Script', 'cursive';
   --main-orange: #e67f09;
+  --main-orange-dark: #c46c08;
+  --main-orange-half-opacity: var(--main-orange)80;
   --white-font-color: rgb(255, 255, 255);
   --black-font-color: #000;
 }
@@ -130,7 +132,7 @@
     }
 
     .menu-btn:hover a {
-      color: #e67f09;
+      color: var(--main-orange);
     }
 
     .order-btn {
@@ -226,8 +228,7 @@
 
 main {
   width: 100%;
-  background-color: rgb(189, 189, 189);
-  padding-bottom: 20em;
+  background-color: rgb(180, 180, 180);
 }
 
 .underline {
@@ -241,33 +242,51 @@ main {
 /* About US  */
 
 #about-us {
+  margin: 5em 0;
   background-image: url('https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2019/05/cover-image-64.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   padding: 4em;
+  position: relative;
+}
+
+#about-us::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+#about-us h1 {
+  z-index: 5;
 }
 
 .about-us-container {
   margin: 5em auto;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
   align-items: center;
   color: #fff;
 }
 
 .about-us-container p {
-  border-left: 5px solid white;
+  border-left: 5px solid var(--main-orange);
   padding: 1em;
-  flex: 1;
   margin: 0 1em;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
   font-family: var(--poppins-font);
+  z-index: 5;
 }
 
 .about-us-container h2 {
   margin-bottom: 0.5em;
   font-family: var(--albert-sons-font);
+  color: var(--main-orange);
+  z-index: 5;
 }
 
 /*  Menu  */
@@ -387,15 +406,41 @@ main {
   font-weight: 400;
 }
 
+.contact {
+  position: relative;
+}
+
+.contact::after {
+  width: 20%;
+  height: 40%;
+  content: "";
+  border: 15px solid var(--main-orange);
+  position: absolute;
+  top: -5%;
+  right: 12%;
+  z-index: 1;
+}
+
 .contact_us_container {
   margin: 5em 15em;
   padding: 4em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0em 2em;
-  border-radius: 7px;
-  background-color: #fff;
-  box-shadow: -30px 30px #e67f09;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 999999;
+}
+
+.contact-border {
+  width: 50%;
+  height: 90%;
+  content: "";
+  border: 15px solid var(--main-orange);
+  position: absolute;
+  bottom: -10%;
+  left: 12%;
+  z-index: 1;
 }
 
 .contact_us_container h1 {
@@ -408,6 +453,7 @@ main {
 .contact-form {
   display: flex;
   flex-direction: column;
+  z-index: 5;
 }
 
 input[type='text'],
@@ -423,21 +469,31 @@ textarea, .submit-btn {
 input[type='text'],
 input[type='email'] {
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid rgb(77, 77, 77);
 }
 
 textarea  {
-  border: 1px solid black;
+  border: 2px solid rgb(77, 77, 77);
   border-radius: 5px;
   
 }
 
 .submit-btn {
   border-radius: 20px;
+  font-size: 0.8rem;
   border: none;
-  padding: 0.8em;
-  background-color: #e67f09;
+  padding: 0.5em;
+  background-color: var(--main-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
+  transition: all ease-in 0.2s;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--main-orange-dark);
 }
 
 .media-container {
@@ -445,23 +501,72 @@ textarea  {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-left: 2px solid #1a1a1a;
+}
+
+.media-container h2 {
+  font-family: var(--albert-sons-font);
+  margin-bottom: 1em;
 }
 
 .media-container a {
-  background-color: #e67f09;
-  border: 2px solid #e67f09;
+  background-color: var(--main-orange);
+  border: 3px solid var(--main-orange);
   color: rgb(255, 255, 255);
   margin: 0.5em auto;
   width: 80%;
   display: flex;
   align-items: center;
-  padding: 1em;
+  padding: 0.8em;
   text-decoration: none;
   font-family: var(--albert-sons-font);
   border-radius: 7px;
+  transition: all ease 0.2s;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
 }
 
 .media-container a:hover {
   background-color: transparent;
-  color: #e67f09;
+  color: var(--main-orange);
+}
+
+#email {
+  background-color: #09e6b6;
+  border-color: #09e6b6;
+}
+
+#facebook {
+  background-color: #3775c7;
+  border-color: #3775c7;
+}
+
+#twitter {
+  background-color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+
+#instagram {
+  background-color: #fb3958;
+  border-color: #fb3958;
+}
+
+#email:hover,
+#facebook:hover,
+#twitter:hover,
+#instagram:hover {
+  background-color: transparent;
+}
+
+#email:hover {
+  color: #09e6b6;
+}
+#facebook:hover {
+  color: #3775c7;
+}
+#twitter:hover {
+  color: #1DA1F2;
+}
+#instagram:hover {
+  color: #fb3958;
 }
