@@ -408,15 +408,16 @@ main {
 
 .contact {
   position: relative;
+  padding: 5em 0;
 }
 
 .contact::after {
   width: 20%;
-  height: 40%;
+  height: 25%;
   content: "";
   border: 15px solid var(--main-orange);
   position: absolute;
-  top: -5%;
+  top: 10%;
   right: 12%;
   z-index: 1;
 }
@@ -434,11 +435,11 @@ main {
 
 .contact-border {
   width: 50%;
-  height: 90%;
+  height: 50%;
   content: "";
   border: 15px solid var(--main-orange);
   position: absolute;
-  bottom: -10%;
+  bottom: 10%;
   left: 12%;
   z-index: 1;
 }
@@ -569,4 +570,44 @@ textarea  {
 }
 #instagram:hover {
   color: #fb3958;
+}
+
+footer {
+  background-color: #1a1a1a;
+  padding: 4em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h1 {
+  color: #fff;
+  font-size: 1rem;
+}
+
+footer h1 span {
+  font-family: var(--dancing-font);
+  color: var(--main-orange);
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.footer-links {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 3px solid #fff;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0.1rem auto;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
