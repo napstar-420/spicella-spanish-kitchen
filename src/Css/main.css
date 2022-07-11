@@ -238,6 +238,38 @@ main {
   border-radius: 10px;
 }
 
+/* About US  */
+
+#about-us {
+  background-image: url('https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2019/05/cover-image-64.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 4em;
+}
+
+.about-us-container {
+  margin: 5em auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+.about-us-container p {
+  border-left: 5px solid white;
+  padding: 1em;
+  flex: 1;
+  margin: 0 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: var(--poppins-font);
+}
+
+.about-us-container h2 {
+  margin-bottom: 0.5em;
+  font-family: var(--albert-sons-font);
+}
+
 /*  Menu  */
 
 .menu-container {
