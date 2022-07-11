@@ -1,13 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React from "react";
 import Header from "./HeaderContainer.js";
 import AboutUs from "./About_us.js";
-import { menuItems } from "./menu";
-import { FaRegHeart, FaHeart } from "react-icons/fa";
+import Menu from "./Menu_Container.js";
 
 const Home = () => {
-  const [favorite, setFavorite] = useState(false);
-
   const sectionStyle = {
     width: "90%",
     margin: "auto",
@@ -57,64 +54,17 @@ const Home = () => {
             alt="store-img"
           />
         </section>
+
         <div className="underline" />
+
         <AboutUs />
-        <div className="underline"></div>
-        <h1
-          style={{ textAlign: "center", fontFamily: "Albert Sans, sans-serif" }}
-          id="menu"
-        >
-          Menu
-        </h1>
-        <section className="menu-container">
-          {menuItems.map((item, index) => {
-            const { name, url } = item;
-            return (
-              <div className="item-container" key={index}>
-                <img src={url} alt={name} />
-                <div
-                  className="content"
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    padding: "0.3rem 0 0.5rem 0",
-                  }}
-                >
-                  <h2 style={{ fontFamily: "Roboto, sans-serif" }}>{name}</h2>
-                  {favorite ? (
-                    <FaHeart
-                      type="button"
-                      style={{ fontSize: "1.5rem", cursor: "pointer" }}
-                      onClick={() => {
-                        setFavorite(!favorite);
-                      }}
-                    />
-                  ) : (
-                    <FaRegHeart
-                      type="button"
-                      style={{ fontSize: "1.5rem", cursor: "pointer" }}
-                      onClick={() => {
-                        setFavorite(!favorite);
-                      }}
-                    />
-                  )}
-                </div>
-                <p
-                  style={{
-                    fontFamily: "Poppins, sans-serif",
-                    fontWeight: "600",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Architecto porro repellat quaerat maiores hic. Magni autem
-                  tenetur dolor libero porro!
-                </p>
-              </div>
-            );
-          })}
-        </section>
-        <div className="underline"></div>
+
+        <div className="underline" />
+
+        <Menu />
+
+        <div className="underline" />
+
         <h1
           style={{ textAlign: "center", fontFamily: "Albert Sans, sans-serif" }}
           id="services"
