@@ -78,7 +78,7 @@ const Home = () => {
               <a href="#menu">
                 Menu <IoIosArrowDown className="nav-link-icon" />
               </a>
-              <a href="#">
+              <a href="#services">
                 Services <IoIosArrowDown className="nav-link-icon" />
               </a>
               <a href="#">
@@ -258,7 +258,7 @@ const Home = () => {
         <div className="underline"></div>
         <h1
           style={{ textAlign: "center", fontFamily: "Albert Sans, sans-serif" }}
-          id="menu"
+          id="services"
         >
           Services
         </h1>
@@ -298,27 +298,27 @@ const Home = () => {
         </section>
         <div className="sub-service-container">
           <div className="chef sub-service-item">
-              <h2>Our Chef's</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                veritatis quisquam fuga velit molestias aut odit quos veniam
-                dolores minus.
-              </p>
+            <h2>Our Chef's</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              veritatis quisquam fuga velit molestias aut odit quos veniam
+              dolores minus.
+            </p>
           </div>
           <div className="waiter sub-service-item">
-              <h2>Our Waiter's</h2>
-              <p>
-                LPorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatem. Facilis rem porro incidunt dolores!
-              </p>
+            <h2>Our Waiter's</h2>
+            <p>
+              LPorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quisquam, voluptatem. Facilis rem porro incidunt dolores!
+            </p>
           </div>
           <div className="staff sub-service-item">
-              <h2>Our Staff</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
-                numquam hic animi soluta veniam sit modi officiis, recusandae
-                mollitia vel aspernatur nemo dolor obcaecati architecto.
-              </p>
+            <h2>Our Staff</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
+              numquam hic animi soluta veniam sit modi officiis, recusandae
+              mollitia vel aspernatur nemo dolor obcaecati architecto.
+            </p>
           </div>
         </div>
         <div className="underline"></div>
