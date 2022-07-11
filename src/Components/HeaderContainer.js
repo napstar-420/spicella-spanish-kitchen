@@ -53,11 +53,8 @@ const HeaderContainer = () => {
             <a href="#services">
               Services <IoIosArrowDown className="nav-link-icon" />
             </a>
-            <a href="#">
+            <a href="#contact_us">
               Contact <IoIosArrowDown className="nav-link-icon" />
-            </a>
-            <a href="#">
-              Rate us <IoIosArrowDown className="nav-link-icon" />
             </a>
           </nav>
           <div className="bottom-container">

@@ -62,9 +62,7 @@ const Home = () => {
         <Menu />
         <div className="underline"/>
         <Services />
-        <div className="underline"/>
         <ContactUs/>
-        <div className="underline"/>
       </main>
     </div>
   );
