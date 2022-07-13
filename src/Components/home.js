@@ -4,29 +4,16 @@ import Header from "./HeaderContainer.js";
 import AboutUs from "./About_us.js";
 import Menu from "./Menu_Container.js";
 import Services from "./Services_Container.js";
-import ContactUs from './Contact_Us.js'
-import Footer from './Footer_container.js'
+import ContactUs from "./Contact_Us.js";
+import Footer from "./Footer_container.js";
 
 const Home = () => {
-  const sectionStyle = {
-    width: "90%",
-    margin: "auto",
-    paddingTop: "4em",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-  };
-
-  const articleStyle = {
-    width: "40%",
-  };
-
   return (
     <div className="home">
       <Header />
       <main>
-        <section style={sectionStyle} id="home">
-          <article style={articleStyle}>
+        <section id="home">
+          <article>
             <h1
               style={{
                 fontSize: "2rem",
@@ -60,9 +47,9 @@ const Home = () => {
         </section>
         <AboutUs />
         <Menu />
-        <div className="underline"/>
+        <div className="underline" />
         <Services />
-        <ContactUs/>
+        <ContactUs />
         <Footer />
       </main>
     </div>

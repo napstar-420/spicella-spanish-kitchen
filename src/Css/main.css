@@ -85,7 +85,6 @@
       color: var(--main-orange);
       margin: 1rem;
       width: max-content;
-      margin-right: auto;
       padding: 0.2rem;
       border-bottom: 4px solid var(--main-orange);
       font-weight: 100;
@@ -226,6 +225,78 @@
       color: rgb(255, 179, 128);
     }
 
+@media screen and (max-width: 1000px) {
+  .middle-container {
+    width: 85%;
+  }
+
+  .middle-container p {
+    margin: 0.5rem;
+  }
+
+  .welcome-container .buttons {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .middle-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .middle-container .image-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .middle-container .welcome-container {
+    background-color: rgba(0, 0, 0, 0.425);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10em;
+  }
+
+  .welcome-container h1 {
+    margin: 1rem 0;
+  }
+
+  .welcome-container p {
+    padding: 0;
+    text-align: center;
+  }
+
+  .bottom-container {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .middle-container .welcome-container {
+    padding: 7em;
+  }
+}
+@media screen and (max-width: 460px) {
+  .middle-container .welcome-container {
+    padding: 3em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .middle-container .welcome-container {
+    padding: 0;
+  }
+}
+
+/*  ----------------------------------MAIN STYLING-----------------------------------------  */
+
 main {
   width: 100%;
   background-color: rgb(180, 180, 180);
@@ -237,6 +308,37 @@ main {
   background-color: #353535;
   margin: 5em auto;
   border-radius: 10px;
+}
+
+/* HOME */
+
+#home {
+  width: 90%;
+  margin: auto;
+  padding-top: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home article {
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #home article {
+    width: 100%;
+  }
+
+  #home img {
+    width: 100%;
+    margin-top: 3em;
+  }
 }
 
 /* About US  */
@@ -289,6 +391,20 @@ main {
   z-index: 5;
 }
 
+@media screen and (max-width: 500px) {
+  #about-us {
+    padding: 1em 2em;
+  }
+
+  .about-us-container {
+    margin: 4em auto;
+  }
+
+  .about-us-container h1 {
+    margin-bottom: 1em;
+  }
+}
+
 /*  Menu  */
 
 .menu-container {
@@ -305,6 +421,13 @@ main {
 
 .item-container {
   margin: auto;
+}
+
+@media screen and (max-width: 468px) {
+  .menu-container {
+    padding: 2rem;
+    grid-template-columns: 1fr;
+  }
 }
 
 .services-container {
@@ -406,6 +529,32 @@ main {
   font-weight: 400;
 }
 
+@media screen and (max-width: 550px) {
+  .services-container {
+    width: 100%;
+    margin: 1em 0%;
+    margin-top: 3em;
+    padding: 0%;
+  }
+
+  .services-container .content {
+    margin: 0em;
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sub-service-container {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sub-service-item {
+    width: 100%;
+  }
+}
+
 .contact {
   position: relative;
   padding: 5em 0;
@@ -422,17 +571,6 @@ main {
   z-index: 1;
 }
 
-.contact_us_container {
-  margin: 5em 15em;
-  padding: 4em;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0em 2em;
-  background-color: #ffffff;
-  position: relative;
-  z-index: 999999;
-}
-
 .contact-border {
   width: 50%;
   height: 50%;
@@ -442,6 +580,17 @@ main {
   bottom: 10%;
   left: 12%;
   z-index: 1;
+}
+
+.contact_us_container {
+  margin: 5em 15em;
+  padding: 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0em 2em;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 999999;
 }
 
 .contact_us_container h1 {
@@ -572,6 +721,46 @@ textarea  {
   color: #fb3958;
 }
 
+@media screen and (max-width: 1200px) {
+  .contact_us_container {
+    margin-inline: auto;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contact_us_container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .contact_us_container {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2em;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea, .submit-btn {
+    width: 100%;
+  }
+
+  .media-container {
+    border: none;
+    margin-top: 5em;
+  }
+
+  .media-container a {
+    width: 100%;
+  }
+
+  .contact::after {
+    width: 40%;
+    top: 8%;
+  }
+}
+
 footer {
   background-color: #1a1a1a;
   padding: 4em 2em;
@@ -610,4 +799,36 @@ footer h1 span {
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-links {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    display: block;
+  }
+
+  footer h1 {
+    font-size: 0.5rem;
+  }
+
+  .footer-links {
+    width: 100%;
+    margin-top: 2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 468px) {
+  html {
+    font-size: 80%;
+  }
 }
